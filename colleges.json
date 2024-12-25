@@ -1,0 +1,203 @@
+[
+    {
+      "id": 1,
+      "name": "Harvard University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Harvard_logo.png",
+      "rating": 4.8,
+      "admissionDate": "2024-01-15",
+      "researchCount": 150,
+      "events": "Annual Science Fair, Coding Hackathon",
+      "sports": "Basketball, Soccer, Tennis"
+    },
+    {
+      "id": 2,
+      "name": "Stanford University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Stanford_University_seal_2012.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-02-01",
+      "researchCount": 200,
+      "events": "Tech Conference, AI Workshop",
+      "sports": "Baseball, Swimming"
+    },
+    {
+      "id": 3,
+      "name": "MIT",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Massachusetts_Institute_of_Technology_seal.svg",
+      "rating": 4.9,
+      "admissionDate": "2024-03-10",
+      "researchCount": 300,
+      "events": "Robotics Expo, Data Science Summit",
+      "sports": "Rowing, Badminton"
+    },
+    {
+      "id": 4,
+      "name": "Princeton University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Princeton_University_seal.svg",
+      "rating": 4.6,
+      "admissionDate": "2024-04-05",
+      "researchCount": 180,
+      "events": "Global Innovation Summit, Leadership Forum",
+      "sports": "Football, Volleyball"
+    },
+    {
+      "id": 5,
+      "name": "Yale University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Yale_University_Shield.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-05-15",
+      "researchCount": 210,
+      "events": "Business Symposium, Art Exhibition",
+      "sports": "Basketball, Soccer"
+    },
+    {
+      "id": 6,
+      "name": "Oxford University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/University_of_Oxford_coat_of_arms.svg",
+      "rating": 4.8,
+      "admissionDate": "2024-06-01",
+      "researchCount": 250,
+      "events": "Cultural Festival, Scientific Research Conference",
+      "sports": "Tennis, Cricket"
+    },
+    {
+      "id": 7,
+      "name": "Cambridge University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/University_of_Cambridge_coat_of_arms.svg",
+      "rating": 4.9,
+      "admissionDate": "2024-07-20",
+      "researchCount": 320,
+      "events": "Robotics Competition, Technology Fair",
+      "sports": "Rowing, Hockey"
+    },
+    {
+      "id": 8,
+      "name": "Columbia University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Columbia_University_seal.svg",
+      "rating": 4.6,
+      "admissionDate": "2024-08-10",
+      "researchCount": 220,
+      "events": "Public Policy Forum, Entrepreneurship Panel",
+      "sports": "Basketball, Tennis"
+    },
+    {
+      "id": 9,
+      "name": "University of Chicago",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/63/University_of_Chicago_seal.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-09-15",
+      "researchCount": 200,
+      "events": "Math Olympiad, Philosophy Symposium",
+      "sports": "Soccer, Swimming"
+    },
+    {
+      "id": 10,
+      "name": "California Institute of Technology",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Caltech_seal.svg",
+      "rating": 4.9,
+      "admissionDate": "2024-10-01",
+      "researchCount": 180,
+      "events": "Engineering Conference, Astronomy Workshop",
+      "sports": "Baseball, Cricket"
+    },
+    {
+      "id": 11,
+      "name": "University of California, Berkeley",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/University_of_California%2C_Berkeley_seal.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-11-05",
+      "researchCount": 230,
+      "events": "Environmental Summit, Artificial Intelligence Forum",
+      "sports": "Football, Swimming"
+    },
+    {
+      "id": 12,
+      "name": "University of Cambridge",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/University_of_Cambridge_coat_of_arms.svg",
+      "rating": 4.8,
+      "admissionDate": "2024-12-01",
+      "researchCount": 210,
+      "events": "International Students Conference, Open Days",
+      "sports": "Basketball, Hockey"
+    },
+    {
+      "id": 13,
+      "name": "University of Toronto",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/University_of_Toronto_logo.svg",
+      "rating": 4.6,
+      "admissionDate": "2024-01-12",
+      "researchCount": 250,
+      "events": "Science Expo, Leadership Retreat",
+      "sports": "Soccer, Rowing"
+    },
+    {
+      "id": 14,
+      "name": "University of Oxford",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/University_of_Oxford_coat_of_arms.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-02-01",
+      "researchCount": 200,
+      "events": "Humanities Festival, Business Leadership Event",
+      "sports": "Tennis, Swimming"
+    },
+    {
+      "id": 15,
+      "name": "Harvard Medical School",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Harvard_Medical_School_seal.svg",
+      "rating": 4.9,
+      "admissionDate": "2024-03-01",
+      "researchCount": 300,
+      "events": "Medical Research Symposium, Health Innovations Conference",
+      "sports": "Soccer, Basketball"
+    },
+    {
+      "id": 16,
+      "name": "Johns Hopkins University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Johns_Hopkins_University_seal.svg",
+      "rating": 4.8,
+      "admissionDate": "2024-04-15",
+      "researchCount": 270,
+      "events": "Global Health Conference, Cancer Research Forum",
+      "sports": "Lacrosse, Swimming"
+    },
+    {
+      "id": 17,
+      "name": "University of Michigan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/University_of_Michigan_seal.svg",
+      "rating": 4.6,
+      "admissionDate": "2024-05-01",
+      "researchCount": 190,
+      "events": "Engineering Showcase, Marketing Event",
+      "sports": "Football, Basketball"
+    },
+    {
+      "id": 18,
+      "name": "University of California, Los Angeles",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/UCLA_logo.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-06-15",
+      "researchCount": 220,
+      "events": "Media Arts Conference, Business Innovation Seminar",
+      "sports": "Tennis, Baseball"
+    },
+    {
+      "id": 19,
+      "name": "Duke University",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Duke_University_seal.svg",
+      "rating": 4.8,
+      "admissionDate": "2024-07-01",
+      "researchCount": 180,
+      "events": "Healthcare Innovations, Tech Entrepreneurship",
+      "sports": "Soccer, Swimming"
+    },
+    {
+      "id": 20,
+      "name": "University of Pennsylvania",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/University_of_Pennsylvania_seal.svg",
+      "rating": 4.7,
+      "admissionDate": "2024-08-20",
+      "researchCount": 230,
+      "events": "Business Strategy Conference, Political Science Debate",
+      "sports": "Basketball, Soccer"
+    }
+  ]
+  
