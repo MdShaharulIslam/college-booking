@@ -1,22 +1,25 @@
 import CollegeCard from "../CollegeCard";
 import Banner from "./Banner";
+import Feedback from "./Feedback";
 import Graduation from "./Graduation";
+import Research from "./Research";
 
 
 
 const Home = () => {
     return (
         <div>
-<Banner></Banner>
+            <Banner></Banner>
 
-<div>
-<CollegeCard></CollegeCard>
+            <div>
+                <CollegeCard></CollegeCard>
 
+            </div>
+            <div className="mx-0 ">
+  <Graduation />
 </div>
-<div>
-
-</div>
-         <Graduation></Graduation>  
+<Research></Research>
+<Feedback></Feedback>
         </div>
     );
 };
