@@ -7,7 +7,7 @@ const CollegeDetails = () => {
 
     useEffect(() => {
         // Fetch college details from the JSON file
-        fetch('../../public/colleges.json')
+        fetch('/colleges.json')
             .then(response => response.json())
             .then(data => {
                 // Find the college by ID
