@@ -8,7 +8,7 @@ const Home = () => {
 <Banner></Banner>
 
 
-            This is home
+           
         </div>
     );
 };
