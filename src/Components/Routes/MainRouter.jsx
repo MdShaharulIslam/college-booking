@@ -11,6 +11,7 @@ import CollegeCard from "../CollegeCard";
 import SingIn from "../SignIn/SingIn";
 import SignUp from "../SignUp/SignUp";
 import PrivateRoute from './PrivateRoute';
+import Graduation from "../Pages/Graduation";
 
 
 const MainRouter = createBrowserRouter([
@@ -59,6 +60,10 @@ const MainRouter = createBrowserRouter([
         path: "signUp",
         element: <SignUp></SignUp>,
       },
+      {
+        path: "graduation",
+        element: <Graduation></Graduation>,
+      }
   
     ],
   },

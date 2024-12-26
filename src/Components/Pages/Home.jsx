@@ -1,5 +1,6 @@
 import CollegeCard from "../CollegeCard";
 import Banner from "./Banner";
+import Graduation from "./Graduation";
 
 
 
@@ -13,9 +14,9 @@ const Home = () => {
 
 </div>
 <div>
-    
+
 </div>
-           
+         <Graduation></Graduation>  
         </div>
     );
 };
