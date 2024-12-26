@@ -10,6 +10,7 @@ import CollegeDetails from "../CollegeDetails";
 import CollegeCard from "../CollegeCard";
 import SingIn from "../SignIn/SingIn";
 import SignUp from "../SignUp/SignUp";
+import PrivateRoute from './PrivateRoute';
 
 
 const MainRouter = createBrowserRouter([
@@ -40,7 +41,11 @@ const MainRouter = createBrowserRouter([
       },
       {
         path: "/college-details/:id",
-        element: <CollegeDetails></CollegeDetails>,
+        element: 
+        <PrivateRoute>
+          <CollegeDetails></CollegeDetails>
+        </PrivateRoute>
+        ,
       },
       {
         path: "/collegeCard",

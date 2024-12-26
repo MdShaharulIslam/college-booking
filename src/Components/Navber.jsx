@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from "../assets/logo.png";
 import { useAuth } from '../Components/Provider/AuthProvider'; 
-// Adjust the import as per your project
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logOut();
+      navigate("/signIn"); // Redirect to the sign-in page after logout
+    } catch (error) {
+      console.error("Logout failed:", error.message);
+    }
+  };
 
   return (
     <nav className="relative bg-white shadow dark:bg-gray-800">
@@ -92,18 +101,26 @@ const Navbar = () => {
           </div>
 
           {/* User Profile / Login Button */}
-          <div className="flex justify-center md:block">
+          <div className="flex items-center space-x-4">
             {user ? (
-              <NavLink
-                to="/profile"
-                className="relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300"
-              >
-                <img
-                  className="w-8 h-8 rounded-full"
-                  src={user.photoURL}
-                  alt="User"
-                />
-              </NavLink>
+              <>
+                <NavLink
+                  to="/profile"
+                  className="relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300"
+                >
+                  <img
+                    className="w-8 h-8 rounded-full"
+                    src={user.photoURL}
+                    alt="User"
+                  />
+                </NavLink>
+                <button
+                  onClick={handleLogout}
+                  className="px-4 py-2 text-sm font-medium text-white bg-red-500 rounded-lg hover:bg-red-600 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-80"
+                >
+                  Logout
+                </button>
+              </>
             ) : (
               <NavLink
                 to="/signIn"
