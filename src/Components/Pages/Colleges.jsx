@@ -6,12 +6,17 @@ const Colleges = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Fetch college data from the JSON file
-        fetch('/colleges.json')
-            .then(response => response.json())
+        fetch('/public/colleges.json') 
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => setColleges(data))
             .catch(error => console.error('Error fetching college data:', error));
     }, []);
+    
 
     const handleDetails = (id) => {
         navigate(`/college-details/${id}`);
