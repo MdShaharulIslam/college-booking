@@ -2,7 +2,7 @@
   import React, { useEffect, useState } from 'react';
   import { useNavigate } from 'react-router-dom';
   
-  const staticColleges = [
+  export const staticColleges = [
     {
       "id": 1,
       "name": "Harvard University",
