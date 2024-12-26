@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from "../assets/logo.png";
+import { useAuth } from '../Components/Provider/AuthProvider'; 
+// Adjust the import as per your project
 
-const Navbar = ({ user }) => {
-  // Mobile menu state
+const Navbar = () => {
+  const { user, logOut } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -51,7 +53,7 @@ const Navbar = ({ user }) => {
           </div>
         </div>
 
-        {/* Mobile Menu open: "block", Menu closed: "hidden" */}
+        {/* Mobile Menu */}
         <div
           className={`${
             isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 -translate-x-full'
@@ -89,27 +91,27 @@ const Navbar = ({ user }) => {
             </NavLink>
           </div>
 
-          {/* User Profile / Cart Icon */}
+          {/* User Profile / Login Button */}
           <div className="flex justify-center md:block">
-            <NavLink
-              to="/profile"
-              className="relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300"
-            >
-              <svg
-                className="w-5 h-5"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+            {user ? (
+              <NavLink
+                to="/profile"
+                className="relative text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300"
               >
-                <path
-                  d="M12 12c2.20914 0 4-1.79086 4-4s-1.79086-4-4-4-4 1.79086-4 4 1.79086 4 4 4zM12 14c-2.67528 0-8 1.34315-8 4v2h16v-2c0-2.65685-5.32472-4-8-4z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <img
+                  className="w-8 h-8 rounded-full"
+                  src={user.photoURL}
+                  alt="User"
                 />
-              </svg>
-            </NavLink>
+              </NavLink>
+            ) : (
+              <NavLink
+                to="/signIn"
+                className="px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+              >
+                Login
+              </NavLink>
+            )}
           </div>
         </div>
       </div>

@@ -8,6 +8,8 @@ import MyCollege from "../Pages/MyCollege";
 import Profile from "../Pages/Profile";
 import CollegeDetails from "../CollegeDetails";
 import CollegeCard from "../CollegeCard";
+import SingIn from "../SignIn/SingIn";
+import SignUp from "../SignUp/SignUp";
 
 
 const MainRouter = createBrowserRouter([
@@ -43,7 +45,15 @@ const MainRouter = createBrowserRouter([
       {
         path: "/collegeCard",
         element: <CollegeCard></CollegeCard>,
-      }
+      },
+      {
+        path: "signIn",
+        element: <SingIn></SingIn>,
+      },
+      {
+        path: "signUp",
+        element: <SignUp></SignUp>,
+      },
   
     ],
   },

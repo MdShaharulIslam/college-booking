@@ -7,7 +7,7 @@ import {
   signOut,
   updateProfile,
 } from "firebase/auth";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "../Firebase/firebase.config";
 import PropTypes from "prop-types";
 import axios from "axios";
@@ -87,11 +87,17 @@ const AuthProvider = ({ children }) => {
     signInWithGoogle,
     logOut,
   };
+
   return (
     <AuthContext.Provider value={authentications}>
       {children}
     </AuthContext.Provider>
   );
+};
+
+// Custom hook for consuming AuthContext
+export const useAuth = () => {
+  return useContext(AuthContext);
 };
 
 AuthProvider.propTypes = {
