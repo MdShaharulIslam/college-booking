@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../../assets/clg1.jpg"; // Only one image for display
 
 const Banner = () => {
@@ -8,10 +9,20 @@ const Banner = () => {
         <div className="text-white pl-4">
           <h1 className="text-6xl font-bold">Find Your Perfect College</h1>
           <p className="text-lg">Discover top colleges, compare programs, and book your admission online.</p>
-          <div className="flex mt-4">
-            <button className="btn btn-primary mr-5">Browse Colleges</button>
-            <button className="btn btn-secondary">Get Started</button>
-          </div>
+          <div className="flex mt-4 space-x-6">
+  
+  <Link to="/colleges">
+  <button className="btn bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+    Browse Colleges
+  </button>
+  </Link>
+  <Link to="/admission">
+   <button className="btn bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+    Get Started
+  </button>
+  </Link>
+ 
+</div>
         </div>
       </div>
     </div>
