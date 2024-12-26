@@ -1,3 +1,4 @@
+import CollegeCard from "../CollegeCard";
 import Banner from "./Banner";
 
 
@@ -7,7 +8,13 @@ const Home = () => {
         <div>
 <Banner></Banner>
 
+<div>
+<CollegeCard></CollegeCard>
 
+</div>
+<div>
+    
+</div>
            
         </div>
     );

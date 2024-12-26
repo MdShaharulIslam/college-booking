@@ -3,7 +3,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navber from "../../Components/Navber";
 import Footer from "../Footer";
-import CollegeCard from "../CollegeCard";
+
 
 const Root = () => {
   const location = useLocation();
@@ -20,7 +20,7 @@ const Root = () => {
     <div>
    <Navber></Navber>
       <Outlet></Outlet>
-      <CollegeCard></CollegeCard>
+     
       <Footer></Footer>
     </div>
   );
