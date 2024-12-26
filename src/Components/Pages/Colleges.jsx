@@ -7,7 +7,7 @@ const Colleges = () => {
 
     useEffect(() => {
         // Fetch college data from the JSON file
-        fetch('../../../colleges.json')
+        fetch('../../../public/colleges.json')
             .then(response => response.json())
             .then(data => setColleges(data))
             .catch(error => console.error('Error fetching college data:', error));
