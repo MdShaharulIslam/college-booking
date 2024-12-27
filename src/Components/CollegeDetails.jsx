@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
 const CollegeDetails = () => {
   const { id } = useParams(); // Get the college ID from the URL
@@ -17,7 +17,7 @@ const CollegeDetails = () => {
           throw new Error("Failed to fetch colleges data");
         }
         const data = await response.json();
-        
+
         // Filter the college based on the 'id' from the URL
         const foundCollege = data.find((college) => college._id === id);
         setCollege(foundCollege);
@@ -68,9 +68,9 @@ const CollegeDetails = () => {
           <h3 className="text-2xl font-semibold mb-4">Admission Date</h3>
           <p className="text-gray-600 mb-4">{college.admissionDate}</p>
           <Link to="/admission">
-          <button className="btn bg-orange-300 hover:bg-orange-400 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-   Admission
-  </button>
+            <button className="btn bg-orange-300 hover:bg-orange-400 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+              Admission
+            </button>
           </Link>
         </div>
       </div>

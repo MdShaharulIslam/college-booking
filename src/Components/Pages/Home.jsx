@@ -1,8 +1,9 @@
 import CollegeCard from "../CollegeCard";
 import Banner from "./Banner";
-import Feedback from "./Feedback";
+
 import Graduation from "./Graduation";
 import Research from "./Research";
+import RatingCard from "./RatingCards/RatingCards";
 
 
 
@@ -19,7 +20,8 @@ const Home = () => {
   <Graduation />
 </div>
 <Research></Research>
-<Feedback></Feedback>
+
+<RatingCard></RatingCard>
         </div>
     );
 };
