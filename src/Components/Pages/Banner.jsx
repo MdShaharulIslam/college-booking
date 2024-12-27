@@ -16,11 +16,7 @@ const Banner = () => {
     Browse Colleges
   </button>
   </Link>
-  <Link to="/admission">
-   <button className="btn bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
-    Get Started
-  </button>
-  </Link>
+ 
  
 </div>
         </div>

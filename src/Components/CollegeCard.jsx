@@ -39,44 +39,7 @@ const CollegeCard = () => {
       sports: 'Rowing, Badminton',
       researchWorks: 'Robotics, Cybersecurity',
       admissionProcess: 'Online',
-    },
-    {
-      id: 4,
-      name: 'Princeton University',
-      image: 'https://i.postimg.cc/BbLfv15Z/4.jpg',
-      rating: 4.6,
-      admissionDate: '2024-04-05',
-      researchCount: 180,
-      events: 'Global Innovation Summit, Leadership Forum',
-      sports: 'Football, Volleyball',
-      researchWorks: 'Innovation, Leadership Studies',
-      admissionProcess: 'Offline',
-    },
-    {
-      id: 5,
-      name: 'Yale University',
-      image: 'https://i.postimg.cc/DfHKMBFS/2.jpg',
-      rating: 4.7,
-      admissionDate: '2024-05-15',
-      researchCount: 210,
-      events: 'Business Symposium, Art Exhibition',
-      sports: 'Basketball, Soccer',
-      researchWorks: 'Business, Arts',
-      admissionProcess: 'Online',
-    },
-    {
-      id: 6,
-      name: 'Oxford University',
-      image: 'https://i.postimg.cc/prwb5Xkf/3.jpg',
-      rating: 4.8,
-      admissionDate: '2024-06-01',
-      researchCount: 250,
-      events: 'Cultural Festival, Scientific Research Conference',
-      sports: 'Tennis, Cricket',
-      researchWorks: 'Cultural Studies, Scientific Research',
-      admissionProcess: 'Offline',
-    },
-  ];
+    }  ];
 
   return (
     <div className="container mx-auto px-4 py-8">
